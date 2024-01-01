@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .animation {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scale {
+            animation: scale 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes scale {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        .color-change {
+            animation: colorChange 3s linear infinite alternate;
+        }
+
+        @keyframes colorChange {
+            from {
+                color: #fff;
+            }
+            to {
+                color: #ffcc00;
+            }
+        }
+
+        /* Navigation Button Styles */
+        .nav-buttons {
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #2ecc71;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        .nav-button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ultraboy</h1>
+        <p>Welcome to my enhanced personal website</p>
+    </header>
+
+    <div class="container animation scale" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Ultraboy. This is a beta website.
+        </p>
+    </div>
+
+    <div class="container animation color-change" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Web Development</li>
+            <li>UX/UI Design</li>
+        </ul>
+    </div>
+
+    <div class="container animation scale" id="projects">
+        <h2>Projects</h2>
+        <p>
+            Project 1: Description<br>
+            Project 2: Description<br>
+            Project 3: Description
+        </p>
+    </div>
+
+    <div class="container animation color-change" id="contact">
+        <h2>Contact</h2>
+        <p>
+            Email: your.email@example.com<br>
+            Twitter: @your_twitter_handle<br>
+            LinkedIn: linkedin.com/in/yourlinkedin
+        </p>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="#about" class="nav-button">About Me</a>
+        <a href="#skills" class="nav-button">Skills</a>
+        <a href="#projects" class="nav-button">Projects</a>
+        <a href="#contact" class="nav-button">Contact</a>
+    </div>
+</body>
+</html>
